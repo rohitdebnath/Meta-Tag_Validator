@@ -340,7 +340,7 @@ external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 
 app.layout = html.Div([
-    html.Div(dcc.Input(id='input-on-submit', type='text')),
+    html.Div(dcc.Input(id='input-on-submit',value='https://www8.hp.com/es/es/home.html', type='text')),
     html.Button('Submit', id='submit-val', n_clicks=0),
     html.Div(id='container-button-basic',
              children='Enter a value and press submit'),
