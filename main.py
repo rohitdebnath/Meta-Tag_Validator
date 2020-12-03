@@ -19,13 +19,13 @@ from concurrent.futures import ThreadPoolExecutor
 import dash_table
 from dash.dependencies import Input, Output
 s = requests.Session()
-a = requests.adapters.HTTPAdapter(max_retries=2)
+a = requests.adapters.HTTPAdapter(max_retries=1)
 s.mount("http://", a)
 
 
 def tag_validator(url1):
         try:
-            token=str(random.randint(0,1000))
+            token=str(random.randint(0,10000))
             headers = {
                         'cache-control': "no-cache",
                         'postman-token': token
