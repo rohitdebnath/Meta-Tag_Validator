@@ -195,7 +195,7 @@ def static_list(path):
     #print(dict_metatag)
     global workstnlist1
     workstnlist1=set()
-    for url in list_urls:
+    for url in list_urls_1:
         vr = url.split("/")
         sc1 = ""
         for i in vr[:5]:
@@ -281,6 +281,23 @@ list_urls=['https://www8.hp.com/ar/es/home.html',
  'https://www8.hp.com/jp/ja/home.html',
  'https://www8.hp.com/si/si/home.html',
  'https://www8.hp.com/rs/rs/home.html']
+list_urls_1=['https://www8.hp.com/ar/es/home.html',
+ 'https://www8.hp.com/bo/es/home.html',
+ 'https://www8.hp.com/br/pt/home.html',
+ 'https://www8.hp.com/ca/en/home.html',
+ 'https://www8.hp.com/ca/fr/home.html',
+ 'https://www8.hp.com/lamerica_nsc_carib/en/home.html',
+ 'https://www8.hp.com/cl/es/home.html',
+ 'https://www8.hp.com/co/es/home.html',
+ 'https://www8.hp.com/ec/es/home.html',
+ 'https://www8.hp.com/lamerica_nsc_cnt_amer/es/home.html',
+ 'https://www8.hp.com/mx/es/home.html',
+ 'https://www8.hp.com/py/es/home.html',
+ 'https://www8.hp.com/pe/es/home.html',
+ 'https://www8.hp.com/pr/es/home.html',
+ 'https://www8.hp.com/us/en/home.html',
+ 'https://www8.hp.com/uy/es/home.html',
+ ]
 df1 = pd.DataFrame(
     columns=(
         "url",
